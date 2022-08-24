@@ -2,11 +2,11 @@
 
 ## Data-Recommendation for Customized Product Configuration Design
 
-The dataset is designed and developed for the elevator traction machine instance recommendation based on the historical customer¡¯s order and corresponding configuration design scheme.The elevator traction machine instances are the configuration design result of this component. The data contains the traction machine configuration result of 61 different types of elevators.
+The dataset is designed and developed for the elevator traction machine instance recommendation based on the historical customerÂ¡Â¯s order and corresponding configuration design scheme.The elevator traction machine instances are the configuration design result of this component. The data contains the traction machine configuration result of 61 different types of elevators.
 
 For the retrieval task, the retrieval dataset is designed and developed. Each record in this dataset is a query-candidate pair. A query (customer requirements) contains 9 numerical feature fields and 8 categorical feature fields, and a candidate (elevator traction machine component instance) contains 3 categorical features (manufacturer, model, and instance identification of the elevator traction machine).
 
-For the ranking task, the ranking dataset is designed and developed. Each record consists of the user¡¯s query, the candidate information, and the adoption score. The feature fields of the user¡¯s query and the candidate information are the same as the retrieval dataset. The adoption scores of positive samples are equal to 1, and the adoption scores of negative samples are equal to 0. For the elevator traction machine instance recommendation, the value range of the adoption score is [0,1], indicating the probability that the user selects the instance candidate as the elevator traction machine configuration design result.
+For the ranking task, the ranking dataset is designed and developed. Each record consists of the userÂ¡Â¯s query, the candidate information, and the adoption score. The feature fields of the userÂ¡Â¯s query and the candidate information are the same as the retrieval dataset. The adoption scores of positive samples are equal to 1, and the adoption scores of negative samples are equal to 0. For the elevator traction machine instance recommendation, the value range of the adoption score is [0,1], indicating the probability that the user selects the instance candidate as the elevator traction machine configuration design result.
 
 FILES:
 
@@ -30,44 +30,44 @@ The description of the feature fields in the following format:
 
 A query (customer requirement) contains the following feature fields:
 
-<q>: <numerical feature> <integer> <rated load of the elevator>
+		<q>: <numerical feature> <integer> <rated load of the elevator>
 
-<v>: <numerical feature> <float> <rated velocity of the elevator>
+		<v>: <numerical feature> <float> <rated velocity of the elevator>
 
-<v1>: <numerical feature> <float> <actual operating velocity of the elevator>
+		<v1>: <numerical feature> <float> <actual operating velocity of the elevator>
 
-<p1>: <numerical feature> <float> <power of the elevator traction machine>
+		<p1>: <numerical feature> <float> <power of the elevator traction machine>
 
-<i1>: <numerical feature> <float> <rating current of the electromotor>
+		<i1>: <numerical feature> <float> <rating current of the electromotor>
 
-<d1>: <numerical feature> <integer> <diameter of traction rope of the elevator>
+		<d1>: <numerical feature> <integer> <diameter of traction rope of the elevator>
 
-<n1>: <numerical feature> <integer> <number of rope grooves of the elevator traction sheave>
+		<n1>: <numerical feature> <integer> <number of rope grooves of the elevator traction sheave>
 
-<yylzj>: <numerical feature> <integer> <diameter of the elevator traction sheave>
+		<yylzj>: <numerical feature> <integer> <diameter of the elevator traction sheave>
 
-<jk>: <numerical feature> <integer> <width of the elevator car>
+		<jk>: <numerical feature> <integer> <width of the elevator car>
 
-<bpqlx>: <categorical feature> <string> <type of the frequency converter of the elevator>
+		<bpqlx>: <categorical feature> <string> <type of the frequency converter of the elevator>
 
-<dzklx>: <categorical feature> <string> <type of the counterweight of the elevator>
+		<dzklx>: <categorical feature> <string> <type of the counterweight of the elevator>
 
-<qdfs>: <categorical feature> <string> <driving method of the elevator>
+		<qdfs>: <categorical feature> <string> <driving method of the elevator>
 
-<standard>: <categorical feature> <string> <executive standard for the elevator design>
+		<standard>: <categorical feature> <string> <executive standard for the elevator design>
 
-<t_cplx>: <categorical feature> <string> <elevator type>
+		<t_cplx>: <categorical feature> <string> <elevator type>
 
-<u1>: <categorical feature> <string> <braking voltage>
+		<u1>: <categorical feature> <string> <braking voltage>
 
-<yyb>: <categorical feature> <string> <traction ratio of the elevator>
+		<yyb>: <categorical feature> <string> <traction ratio of the elevator>
 
-<yyjlx>: <categorical feature> <string> <motor type of the elevator>
+		<yyjlx>: <categorical feature> <string> <motor type of the elevator>
 
 A candidate (elevator traction machine instance) contains the following feature fields:
 
-<yyjcj>: <categorical feature> <string> <manufacturer of the elevator traction machine>
+		<yyjcj>: <categorical feature> <string> <manufacturer of the elevator traction machine>
 
-<yyjxh>: <categorical feature> <string> <model/type of the elevator traction machine>
+		<yyjxh>: <categorical feature> <string> <model/type of the elevator traction machine>
 
-<item>: <categorical feature> <string> <instance identification of the elevator traction machine>
+		<item>: <categorical feature> <string> <instance identification of the elevator traction machine>
